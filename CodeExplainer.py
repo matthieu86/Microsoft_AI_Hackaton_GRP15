@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration d'Azure OpenAI
-
+openai.api_key = ""  # Remplace par ta clé API
+ENDPOINT = ""
 
 # Fonction pour expliquer un fichier Python via OpenAI
 def expliquer_code(code, question="Explique ce code"):
