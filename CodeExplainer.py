@@ -1,8 +1,11 @@
 import streamlit as st
 import openai
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Configuration d'Azure OpenAI
-openai.api_key = "YOUR_AZURE_OPENAI_API_KEY"  # Remplace par ta clé API
+
 
 # Fonction pour expliquer un fichier Python via OpenAI
 def expliquer_code(code, question="Explique ce code"):
